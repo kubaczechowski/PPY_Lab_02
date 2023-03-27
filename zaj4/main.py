@@ -35,9 +35,21 @@ def is_prime(n):
 
 prime(1, 2, 3, 4)
 
+#
+# Napisz funkcję szyfrującą wiadomość szyfrem cezara. Dla ułatwienia należy przekształcić
+# wiadomość tak aby zawierała tylko wielkie lub małe litery.
+# Funkcja przyjmuje:
+# wiadomość – tekst do zaszyfrowania,
+# klucz – liczbę o ile należy przesunąć litery w alfabecie
+# oraz zwraca zaszyfrowaną wiadomość w formie łańcucha znaków -string. (40%)
+# Funkcja szyfruje tylko litery – inne znaki wstawia do końcowej zaszyfrowanej wiadomości
+# bez zmian(10%)
+# Funkcja rozwiązuje problem klucza przesuwającego litery poza zakres tablicy z alfabetem
+# oraz problem podania klucza o dowolnej wielkości(20%).
+# Funkcja opcjonalnie przyjmuje dowolny alfabet. Domyślnie używa angielskiego(10%).
 
 def szyfr_cezara(wiadomosc, klucz):
-    letters = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŹŻ".lower()
+    letters = "abcdefghijklmnopqrstuvwxyz"
 
     res = ""
 
@@ -51,5 +63,5 @@ def szyfr_cezara(wiadomosc, klucz):
     return res.lower()
 
 
-szyfr_cezara("a", 70)
-szyfr_cezara("A", 70)
+szyfr_cezara("aa", 52)
+szyfr_cezara("A", 52)
