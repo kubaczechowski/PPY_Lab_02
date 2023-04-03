@@ -54,10 +54,13 @@ def szyfr_cezara(wiadomosc, klucz):
     res = ""
 
     for letter in wiadomosc:
-        if letters.__contains__(letter):
+        if letter.isalpha() && letter.islower():
             res += letters[(letters.index(letter) + klucz) % len(letters)]
-        if letters.upper().__contains__(letter):
+        elif letter.isalpha() && letter.isupper()
             res += letters[(letters.index(letter.lower()) + klucz) % len(letters)]
+        else:
+            res += letter
+
 
     print(res)
     return res.lower()
