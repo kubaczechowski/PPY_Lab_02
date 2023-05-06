@@ -1,1 +1,2 @@
-test2@gmail.com,lukasz,kwasniewicz,100test2@gmail.com,lukasz,kwasniewicz,100
+test@gmail.com,kamil,kaminski,70,4.0,GRADED
+test2@gmail.com,lukasz,kwasniewicz,100,5.0,GRADED

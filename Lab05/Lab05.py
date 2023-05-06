@@ -1,4 +1,4 @@
-filepath = "students2.txt"
+filepath = "../Lab06/students2.txt"
 
 students = {}
 
